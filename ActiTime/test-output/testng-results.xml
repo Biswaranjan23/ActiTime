@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-26T19:50:34 IST" name="Default suite" finished-at="2023-02-26T19:51:51 IST" duration-ms="77486">
+    <groups>
+      <group name="system">
+        <method signature="CreateCustomer.customerCreation()[pri:0, instance:TestScript.CreateCustomer@130d63be]" name="customerCreation" class="TestScript.CreateCustomer"/>
+      </group> <!-- system -->
+    </groups>
+    <test started-at="2023-02-26T19:50:34 IST" name="Default test" finished-at="2023-02-26T19:51:51 IST" duration-ms="77486">
+      <class name="TestScript.CreateCustomer">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:TestScript.CreateCustomer@130d63be]" started-at="2023-02-26T19:50:34 IST" name="launchBrowser" finished-at="2023-02-26T19:50:37 IST" duration-ms="3077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:TestScript.CreateCustomer@130d63be]" started-at="2023-02-26T19:50:37 IST" name="login" finished-at="2023-02-26T19:50:46 IST" duration-ms="8907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="customerCreation()[pri:0, instance:TestScript.CreateCustomer@130d63be]" started-at="2023-02-26T19:50:46 IST" name="customerCreation" finished-at="2023-02-26T19:51:42 IST" duration-ms="56561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerCreation -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:TestScript.CreateCustomer@130d63be]" started-at="2023-02-26T19:51:43 IST" name="logout" finished-at="2023-02-26T19:51:51 IST" duration-ms="8863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestScript.CreateCustomer@130d63be]" started-at="2023-02-26T19:51:51 IST" name="closeBrowser" finished-at="2023-02-26T19:51:51 IST" duration-ms="13" status="FAIL">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : Your session has expired.
+The current page will be reloaded to start a new session.
+
+Sorry for inconvenience.}
+  (Session info: chrome=110.0.5481.105): Your session has expired.
+The current page will be reloaded to start a new session.
+
+Sorry for inconvenience.
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [12bfe316e47db9d6b9cccb3e1d3ac272, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.105, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\BISWAR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59757}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59757/devtoo..., se:cdpVersion: 110.0.5481.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 12bfe316e47db9d6b9cccb3e1d3ac272]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Your session has expired.
+The current page will be reloaded to start a new session.
+
+Sorry for inconvenience.}
+  (Session info: chrome=110.0.5481.105): Your session has expired.
+The current page will be reloaded to start a new session.
+
+Sorry for inconvenience.
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [12bfe316e47db9d6b9cccb3e1d3ac272, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.105, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\BISWAR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59757}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59757/devtoo..., se:cdpVersion: 110.0.5481.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 12bfe316e47db9d6b9cccb3e1d3ac272
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:419)
+at GenericLib.BaseClass.closeBrowser(BaseClass.java:68)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:222)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:131)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestScript.CreateCustomer -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
